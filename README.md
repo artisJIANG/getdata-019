@@ -1,9 +1,8 @@
-
 #### History ####
-Artis 2015-0420
+#### Artis 2015-0420 ####
 ==============================================
 
-### Author: Artis JIANG (https://github.com/artisJIANG/getdata-019) ###
+##### Author: Artis JIANG (https://github.com/artisJIANG/getdata-019) #####
 
 
 Getting and Cleaning Data Course Project
