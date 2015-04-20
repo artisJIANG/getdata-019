@@ -79,7 +79,7 @@ _From Evaluation:_ I was able to follow the README in the directory that
 explained what the analysis files did. 
 
 
-### Data Analysis Explanation
+### Data Analysis Explanation and Pseudo code
 
 #### For 1st tiny data set:
 

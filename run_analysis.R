@@ -60,7 +60,7 @@ names(X) <- features[keepColumns]
 names(X) <- gsub("\\(|\\)", "", names(X))
 names(X) <- tolower(names(X))
 
-## Read ActivityList (to add descriptive names to data set)
+## Read Activity List (to add descriptive names to data set)
 activities <- read.table("UCI_HAR_Dataset/activity_labels.txt")
 activities[,2] = gsub("_", "", tolower(as.character(activities[,2])))
 Y[,1] = activities[Y[,1], 2]
