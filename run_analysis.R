@@ -54,7 +54,7 @@ features <- featuresList$V2
 ## Logical Vector to keep only std and mean columns
 keepColumns <- grepl("(std|mean[^F])", features, perl=TRUE)
 
-## Keep only data we want, and name it human readable
+## Keep expected data and give it human readable names
 X <- X[, keepColumns]
 names(X) <- features[keepColumns]
 names(X) <- gsub("\\(|\\)", "", names(X))
