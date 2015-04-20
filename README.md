@@ -1,9 +1,9 @@
-# getdata-019
 
 #### History ####
 Artis 2015-0420
-## test for push 2nd
 ==============================================
+
+### Author: Artis JIANG (https://github.com/artisJIANG/getdata-019) ###
 
 
 Getting and Cleaning Data Course Project
@@ -29,14 +29,79 @@ You should create one R script called run_analysis.R that does the following.
 4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-## My solution
 
-To run the analysis, perform the following steps:
-* Unzip the file getdata-projectfiles-UCI HAR Dataset.zip in your working directory.
-* Place the scripts *run_analysis.R*, *analysis_functions.R* and *constants.R* in your working directory.
-* If necessary, modify the file *constants.R* indicating the name of the directory containing the data, if it has been modified, and / or the delimiting character for your filesystem.
-* Load the source *run_analysis.R* at your session in R, with **`source("run_analysis.R")`**
-* Finally, execute **`run.analysis()`** in R.
-* Be sure to have installed the packages data.table, plyr and reshape2.
 
-run.analysis() uses the constants defined in constants.R and the functions from analysis_functions.R, and generates a file called new_dataset.txt in your working directory.
+### Evaluation Checklist
+
+#### Tidy Data Set
+
+_From Question:_ Please upload a tidy data set according to the instructions
+in the project description. Please upload your data set as a separate file (do
+not cut and paste a dataset directly into the text box, as this may cause
+errors saving your submission). 
+
+_From Evaluation:_ Has the student submitted a tidy data set? 
+
+#### Second Data Set
+
+_From Question:_ Creates a second, independent tidy data set with the average
+of each variable for each activity and each subject.
+
+#### Github Repo with Required Scripts
+
+_From Question:_ Please submit a link to a Github repo with the code for
+performing your analysis. The code should have a file `run_analysis.R` in the
+main directory that can be run as long as the Samsung data is in your working
+directory.  The output should be the tidy data set you submitted for part 1.
+
+_From Evaluation:_ Did the student submit a Github repo with the required
+scripts?
+
+#### Code Book
+
+_From Overview:_ A code book that describes the variables, the data, and any
+transformations or work that you performed to clean up the data called
+`CodeBook.md`.
+
+_From Evaluation:_ Please submit a code book that modifies and updates the
+codebooks available to you with the data to indicate all the variables and
+summaries you calculated, along with units, and any other relevant information.
+
+#### README
+
+_From Overview:_ You should also include a `README.md` in the repo with your
+scripts. This repo explains how all of the scripts work and how they are
+connected.
+
+_From Question:_ You should include a `README.md` in the repo describing how
+the script works.
+
+_From Evaluation:_ I was able to follow the README in the directory that
+explained what the analysis files did. 
+
+
+### Data Analysis Explanation
+
+#### For 1st tiny data set:
+
+- Read data sets and combine them
+- Read subjects and combine them
+- Read data labels and combine them
+- Read features list
+- Subset only only std and mean features from list
+- Perform same subset on data set
+- Rename features to be more human readable
+- Read activity list
+- Rename activities to be more human readable
+- Rename data labels with activity name
+- Merge data, subjects, and labels to single tiny data set
+- Write tiny data set to file
+
+#### For 2nd tiny data set: average of measurement for activity and subject
+
+- Prepare empty data set of appropriate length for 
+- Loop through subjects, then subloop through activities
+- For each activity in a subject, get the full list of measurements
+- Calculate the mean of each of these activities
+- Place the means in subsequent columns of the subject/activity row
+- Write second tiny data set to file
