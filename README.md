@@ -39,16 +39,16 @@ You should create one R script called run_analysis.R that does the following.
 
 #### Github Repo with Required Scripts
 
-[Question]: Please submit a link to a Github repo with the code for
+`[Question]`: Please submit a link to a Github repo with the code for
 performing your analysis. The code should have a file `run_analysis.R` in the
 main directory that can be run as long as the Samsung data is in your working
 directory. You should include a `README.md` in the repo describing how the script works and the code book describing the variables.
 
-[For Evaluation]: Did the student submit a Github repo with the required scripts?
+`[For Evaluation]`: Did the student submit a Github repo with the required scripts?
 
 [For Evaluation]: Was code book called `CodeBook.md` submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 
-[For Evaluation]: I was able to follow the README called `README.md` in the directory that explained what the analysis files did. 
+`[For Evaluation]`: I was able to follow the README called `README.md` in the directory that explained what the analysis files did. 
 
 
 

@@ -6,32 +6,26 @@
 
 	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 	
-[Source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) of the original data:
+[Source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) the given data:
 
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 =====
 
-### Process
+### [Steps]:
 
-The script `run_analysis.R` performs the following process to clean up the data
-and create tiny data sets:
+The script `run_analysis.R` performs the following process to create tidy data sets:
 
 1. Merge the training and test sets to create one data set.
 
-2. Reads `features.txt` and uses only the measurements on the mean and standard
-   deviation for each measurement. 
+2. Read `features.txt` and uses only measurements on the mean and standard deviation for each measurement. 
 
-3. Reads `activity_labels.txt` and applies human readable activity names to
-   name the activities in the data set.
+3. Read `activity_labels.txt` and apply activity names to name the activities in the data set.
 
-4. Labels the data set with descriptive names. (Names are converted to lower
-   case; underscores and brackets are removed.)
+4. Label the data set with descriptive names. 
 
-5. Merges the features with activity labels and subject IDs. The result is
-   saved as `tidyData_q4.txt`.
+5. Merge the features with activity labels and subject IDs. The result is saved as `tidyData_q4.txt`.
 
-6. The average of each measurement for each activity and each subject is merged
-   to a second data set. The result is saved as `tidyData_q5.txt`.
+6. The average of each measurement for each activity and each subject is merged to a second data set. The result is saved as `tidyData_q5.txt`.
 
 ### Variables
 
@@ -61,7 +55,7 @@ and create tiny data sets:
 
 #### tidyData_q4.txt
 
-`tidyData_q4.txt` is a 10299x68 data frame.
+is a 10299x68 data frame.
 
 - The first column contains subject IDs.
 - The second column contains activity names.
@@ -70,7 +64,7 @@ and create tiny data sets:
 
 #### tidyData_q5.txt
 
-`tidyData_q5.txt` is a 180x68 data frame.
+is a 180x68 data frame.
 
 - The first column contains subject IDs.
 - The second column contains activity names.

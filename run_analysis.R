@@ -18,12 +18,12 @@
 # WD = paste( getwd(), "UCI_HAR_Dataset", sep="/" )
 # if (!is.null(WD)) setwd(WD)
 
-## Read data sets and combine
+## Read data sets and combine them
 testData <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 trainData <- read.table("UCI_HAR_Dataset/train/X_train.txt")
 X <- rbind(testData, trainData)
 
-## Garbage collection
+## Remove intermediate data
 rm(testData)
 rm(trainData)
 
@@ -32,7 +32,7 @@ testSub <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
 trainSub <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
 S <- rbind(testSub, trainSub)
 
-## Garbage collection
+## Remove intermediate data
 rm(testSub)
 rm(trainSub)
 
@@ -41,7 +41,7 @@ testLabel <- read.table("UCI_HAR_Dataset/test/y_test.txt")
 trainLabel <- read.table("UCI_HAR_Dataset/train/y_train.txt")
 Y <- rbind(testLabel, trainLabel)
 
-## Garbage collection
+## Remove intermediate data
 rm(testLabel)
 rm(trainLabel)
 
@@ -54,7 +54,7 @@ features <- featuresList$V2
 ## Logical Vector to keep only std and mean columns
 keepColumns <- grepl("(std|mean[^F])", features, perl=TRUE)
 
-## Keep expected data and give it human readable names
+## Keep expected data and give human readable names
 X <- X[, keepColumns]
 names(X) <- features[keepColumns]
 names(X) <- gsub("\\(|\\)", "", names(X))
@@ -66,12 +66,12 @@ activities[,2] = gsub("_", "", tolower(as.character(activities[,2])))
 Y[,1] = activities[Y[,1], 2]
 names(Y) <- "activity" ## Add activity label
 
-## Add human readable labels to activity names
+## Add labels to activity names
 names(S) <- "subject"
 tidyData <- cbind(S, Y, X)
 write.table(tidyData, "UCI_HAR_Dataset/tidyData_q4.txt")
 
-## Create second tiny data set with avg of each var for each act and each sub
+## Create tidy data set with average of each variable for each act and each sub element
 uS = unique(S)[,1]
 nS = length(uS)
 nA = length(activities[,1])
