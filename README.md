@@ -30,7 +30,7 @@ You should create one R script called run_analysis.R that does the following.
 
 #### Tidy Data Set
 
-_#####Question:#####_ Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
+#####Question:##### Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
 _From Evaluation:_ Has the student submitted a tidy data set? 
 
