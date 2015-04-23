@@ -89,4 +89,5 @@ for (s in 1:nS) {
 	}
 }
 
+# write.table(td, "UCI_HAR_Dataset/tidyData_q5.txt", row.name=FALSE)
 write.table(td, "UCI_HAR_Dataset/tidyData_q5.txt")

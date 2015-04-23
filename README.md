@@ -30,9 +30,11 @@ You should create one R script called run_analysis.R that does the following.
 
 #### Tidy Data Set
 
-#####Question:##### Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
+#####Question:##### 
+Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
-_From Evaluation:_ Has the student submitted a tidy data set? 
+#####From Evaluation:##### 
+Has the student submitted a tidy data set? Either a wide or a long form of the data is acceptable if it meets the tidy data principles of week 1 (Each variable you measure should be in one column, Each different observation of that variable should be in a different row).
 
 #### Second Data Set
 
