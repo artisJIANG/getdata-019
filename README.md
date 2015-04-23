@@ -6,7 +6,7 @@ This repository contains the assignment of the Coursera course "Getting and Clea
 
 
 
-## Description of the assignment
+## Description:
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article ( http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/ ). Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
@@ -25,15 +25,12 @@ You should create one R script called run_analysis.R that does the following.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 
-
+==============================================
 ### Evaluation Checklist
 
 #### Tidy Data Set
 
-_From Question:_ Please upload a tidy data set according to the instructions
-in the project description. Please upload your data set as a separate file (do
-not cut and paste a dataset directly into the text box, as this may cause
-errors saving your submission). 
+_#####Question:#####_ Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
 _From Evaluation:_ Has the student submitted a tidy data set? 
 
