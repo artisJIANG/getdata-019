@@ -1,14 +1,10 @@
-#### History ####
-#### Artis 2015-0420 ####
-==============================================
-
-##### Author: Artis JIANG (https://github.com/artisJIANG/getdata-019) #####
-
-
 Getting and Cleaning Data Course Project
 ========================================
 
+##### Author: Artis JIANG (https://github.com/artisJIANG/getdata-019) #####
 This repository contains the assignment of the Coursera course "Getting and Cleaning Data". 
+
+
 
 ## Description of the assignment
 
