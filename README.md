@@ -22,61 +22,39 @@ You should create one R script called run_analysis.R that does the following.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names. 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-
-
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    
+    
+    
+    
 ==============================================
-### Evaluation Checklist
+### For Evaluation
 
 #### Tidy Data Set
 
-#####Question:_ 
-Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
+[Question]: Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
-#####From Evaluation:_
-Has the student submitted a tidy data set? Either a wide or a long form of the data is acceptable if it meets the tidy data principles of week 1 (Each variable you measure should be in one column, Each different observation of that variable should be in a different row).
+[For Evaluation]: Has the student submitted a tidy data set? Either a wide or a long form of the data is acceptable if it meets the tidy data principles of week 1 (Each variable you measure should be in one column, Each different observation of that variable should be in a different row).
 
-#### Second Data Set
-
-_From Question:_ Creates a second, independent tidy data set with the average
-of each variable for each activity and each subject.
 
 #### Github Repo with Required Scripts
 
-_From Question:_ Please submit a link to a Github repo with the code for
+[Question]: Please submit a link to a Github repo with the code for
 performing your analysis. The code should have a file `run_analysis.R` in the
 main directory that can be run as long as the Samsung data is in your working
-directory.  The output should be the tidy data set you submitted for part 1.
+directory. You should include a `README.md` in the repo describing how the script works and the code book describing the variables.
 
-_From Evaluation:_ Did the student submit a Github repo with the required
-scripts?
+[For Evaluation]: Did the student submit a Github repo with the required scripts?
 
-#### Code Book
+[For Evaluation]: Was code book called `CodeBook.md` submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 
-_From Overview:_ A code book that describes the variables, the data, and any
-transformations or work that you performed to clean up the data called
-`CodeBook.md`.
-
-_From Evaluation:_ Please submit a code book that modifies and updates the
-codebooks available to you with the data to indicate all the variables and
-summaries you calculated, along with units, and any other relevant information.
-
-#### README
-
-_From Overview:_ You should also include a `README.md` in the repo with your
-scripts. This repo explains how all of the scripts work and how they are
-connected.
-
-_From Question:_ You should include a `README.md` in the repo describing how
-the script works.
-
-_From Evaluation:_ I was able to follow the README in the directory that
-explained what the analysis files did. 
+[For Evaluation]: I was able to follow the README called `README.md` in the directory that explained what the analysis files did. 
 
 
-### Data Analysis Explanation and Pseudo code
 
-#### For 1st tiny data set:
+### [Data Analysis Explanation and Pseudo code]
+
+#### For tidyData_q4 set:
 
 - Read data sets and combine them
 - Read subjects and combine them
@@ -89,13 +67,13 @@ explained what the analysis files did.
 - Rename activities to be more human readable
 - Rename data labels with activity name
 - Merge data, subjects, and labels to single tiny data set
-- Write tiny data set to file
+- Write tidyData_q4 set to file
 
-#### For 2nd tiny data set: average of measurement for activity and subject
+#### For tidyData_q5 set: average of measurement for activity and subject
 
 - Prepare empty data set of appropriate length for 
 - Loop through subjects, then subloop through activities
 - For each activity in a subject, get the full list of measurements
 - Calculate the mean of each of these activities
 - Place the means in subsequent columns of the subject/activity row
-- Write second tiny data set to file
+- Write tidyData_q5 set to file
