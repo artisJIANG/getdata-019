@@ -23,27 +23,27 @@ testData <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 trainData <- read.table("UCI_HAR_Dataset/train/X_train.txt")
 X <- rbind(testData, trainData)
 
-## Remove intermediate data
-rm(testData)
-rm(trainData)
+	## Remove intermediate data
+	rm(testData)
+	rm(trainData)
 
 ## Read subjects and combine
 testSub <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
 trainSub <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
 S <- rbind(testSub, trainSub)
 
-## Remove intermediate data
-rm(testSub)
-rm(trainSub)
+	## Remove intermediate data
+	rm(testSub)
+	rm(trainSub)
 
 ## Read in data labels and combine
 testLabel <- read.table("UCI_HAR_Dataset/test/y_test.txt")
 trainLabel <- read.table("UCI_HAR_Dataset/train/y_train.txt")
 Y <- rbind(testLabel, trainLabel)
 
-## Remove intermediate data
-rm(testLabel)
-rm(trainLabel)
+	## Remove intermediate data
+	rm(testLabel)
+	rm(trainLabel)
 
 ## Read Features List (to be used as column names for data)
 featuresList <- read.table("UCI_HAR_Dataset/features.txt", stringsAsFactors=FALSE)
