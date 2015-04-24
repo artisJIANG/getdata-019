@@ -56,24 +56,24 @@ directory. You should include a `README.md` in the repo describing how the scrip
 
 #### For tidyData_q4 set:
 
-- Read data sets and combine them
-- Read subjects and combine them
-- Read data labels and combine them
+- Read data sets then combine them
+- Read subjects then combine them
+- Read data labels then combine them
 - Read features list
-- Subset only only std and mean features from list
+- Subset std and mean features from list
 - Perform same subset on data set
-- Rename features to be more human readable
+- Rename features to be good for human reading
 - Read activity list
-- Rename activities to be more human readable
+- Rename activities to be good for human reading
 - Rename data labels with activity name
-- Merge data, subjects, and labels to single tiny data set
+- Merge data, subjects, and labels to single tidy data set
 - Write tidyData_q4 set to file
 
 #### For tidyData_q5 set: average of measurement for activity and subject
 
-- Prepare empty data set of appropriate length for 
-- Loop through subjects, then subloop through activities
+- Prepare empty data set of appropriate length  
+- Loop through `subjects`, then subloop through `activities`
 - For each activity in a subject, get the full list of measurements
-- Calculate the mean of each of these activities
-- Place the means in subsequent columns of the subject/activity row
+- Calculate the mean of each activity
+- Place means in subsequent columns of the subject/activity row
 - Write tidyData_q5 set to file

@@ -11,7 +11,16 @@
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 =====
 
-### [Steps]:
+### [Usage for the assignment script]:
+
+1. Clone `git clone https://github.com/artisJIANG/getdata-019.git` in your assigned directory
+2. In RStudio concole panel, change the working directory to the path of above repositoty in your local host.
+   e.g., `setwd("<YourDownloadDirectory>/getdata-019/")`
+3. In the console `source("run_analysis.R")`
+4. Check the Environment panel of RStudio
+=====
+
+### [Steps of Data Manipulation]:
 
 The script `run_analysis.R` performs the following process to create tidy data sets:
 
@@ -29,7 +38,7 @@ The script `run_analysis.R` performs the following process to create tidy data s
 
 ### Variables
 
-- testData - table contents of `test/X_test.txt`
+-- testData - table contents of `test/X_test.txt`
 - trainData - table contents of `train/X_train.txt`
 - X - Measurement data. Combined data set of the two above variables
 - testSub - table contents of `test/subject_test.txt`
