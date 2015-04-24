@@ -57,7 +57,7 @@ The script `run_analysis.R` performs the following process to create tidy data s
 - nS - number of unique subjects
 - nA - number of activities
 - nC - number of columns in tidyData
-- td - second tiny data set with average of each variable for each activity and
+- td - second tidy data set with average of each variable for each activity and
   subject
 
 ### Output
